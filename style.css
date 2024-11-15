@@ -15,8 +15,10 @@ html {
     --color2: #F06B1D;
     --color3: #00EFEE;
     --color4: #B06A41;
-    --color5: #705546;
+    --color5: #ecbea5;
 }
+
+
 
 h1, h2, p, a, button {
     font-family: 'Tilt Neon', sans-serif;
@@ -117,4 +119,18 @@ footer{
     background-color: var(--color1);
     border-top: 2px solid var(--color3);
     color: white;
+}
+
+@keyframes scintillement {
+    0%, 100%{
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+#indice:hover h2, #indice:hover p{
+    animation: scintillement 0.5s infinite;
 }
